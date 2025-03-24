@@ -86,7 +86,7 @@ func createPlaceholder() [10][5]string {
 	return digits
 }
 
-func createAlarmSign() [8][5]string {
+func createAlarmSign() [10][5]string {
 	type placeholder [5]string
 
 	emp := placeholder {
@@ -137,7 +137,17 @@ func createAlarmSign() [8][5]string {
 		" █ ",
 	}
 
-	return [8][5]string {
-		emp, a, l, a, r, m, exl, emp,
+	return [10][5]string {
+		emp, emp, a, l, a, r, m, exl, emp, emp,
 	}
+
+	
+}
+
+var dot = [5]string {
+	"   ",
+	"   ",
+	"   ",
+	"   ",
+	" █ ",
 }

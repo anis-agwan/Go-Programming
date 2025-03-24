@@ -28,10 +28,12 @@ func main() {
 		hour := now.Hour()
 		min := now.Minute()
 		sec := now.Second()
+		ssec := now.Nanosecond() / 1e8;
+		// fmt.Print(ssec);
 		fmt.Println()
-		printClock(digits, hour, min, sec, colon)
+		printClock(digits, hour, min, sec, ssec, colon)
 		fmt.Println()
-		time.Sleep(time.Second)
+		time.Sleep(time.Second / 10)
 	}
 
 	

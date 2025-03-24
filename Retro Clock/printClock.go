@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func printClock(digits [10][5]string, hour int, min int, sec int, colon [5]string) {
+func printClock(digits [10][5]string, hour int, min int, sec int, ssec int, colon [5]string) {
 
 	clock := [...][5]string {
 		digits[hour/10], digits[hour%10],
@@ -12,6 +12,8 @@ func printClock(digits [10][5]string, hour int, min int, sec int, colon [5]strin
 		digits[min/10], digits[min%10],
 		colon,
 		digits[sec/10], digits[sec%10],
+		dot,
+		digits[ssec],
 	}
 
 	alarmed := sec%10 == 0
