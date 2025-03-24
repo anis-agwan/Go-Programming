@@ -85,3 +85,59 @@ func createPlaceholder() [10][5]string {
 
 	return digits
 }
+
+func createAlarmSign() [8][5]string {
+	type placeholder [5]string
+
+	emp := placeholder {
+		"   ",
+		"   ",
+		"   ",
+		"   ",
+		"   ",
+	}
+
+	a := placeholder {
+		"███",
+		"█ █",
+		"███",
+		"█ █",
+		"█ █",
+	}
+
+	l := placeholder {
+		"█  ",
+		"█  ",
+		"█  ",
+		"█  ",
+		"███",
+	}
+
+	r := placeholder {
+		"██ ",
+		"█ █",
+		"██ ",
+		"█ █",
+		"█ █ ",
+	}
+
+	m := placeholder {
+		"█ █",
+		"███",
+		"█ █",
+		"█ █",
+		"█ █",
+	}
+
+	exl := placeholder {
+		" █ ",
+		" █ ",
+		" █ ",
+		"   ",
+		" █ ",
+	}
+
+	return [8][5]string {
+		emp, a, l, a, r, m, exl, emp,
+	}
+}
