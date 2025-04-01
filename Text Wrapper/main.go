@@ -13,6 +13,8 @@ import (
 	"unicode"
 )
 
+// Hello
+
 func main() {
 	const text = `Galaksinin Batı Sarmal Kolu'nun bir ucunda, haritası bile çıkarılmamış ücra bir köşede, gözlerden uzak, küçük ve sarı bir güneş vardır.
 
